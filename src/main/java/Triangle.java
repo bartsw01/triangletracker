@@ -22,9 +22,9 @@ public class Triangle {
             boolean equilateralAC = integerSideA.equals(integerSideC);
 
             if (equilateralAB && equilateralAC){
-                System.out.println("This is equilateral triangle");
-            } else {
-                System.out.println("This is might be a triangle");
+                System.out.println("This is an equilateral triangle");
+            } else if (equilateralAB) {
+                    System.out.println("This is an isosceles triangle");
 
             }
 

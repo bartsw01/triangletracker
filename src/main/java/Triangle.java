@@ -12,16 +12,22 @@ public class Triangle {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
             System.out.println("Enter length of Triangle side A");
-            String sideA = bufferedReader.readLine();
-            System.out.println("Side A of the triangle = " + sideA);
-
+            Integer integerSideA = Integer.parseInt(bufferedReader.readLine());
             System.out.println("Enter length of Triangle side B");
-            String sideB = bufferedReader.readLine();
-            System.out.println("Side B of the triangle = " + sideB);
-
+            Integer integerSideB = Integer.parseInt(bufferedReader.readLine());
             System.out.println("Enter length of Triangle side C");
-            String sideC = bufferedReader.readLine();
-            System.out.println("Side C of the triangle = " + sideC);
+            Integer integerSideC = Integer.parseInt(bufferedReader.readLine());
+
+            boolean equilateralAB = integerSideA.equals(integerSideB);
+            boolean equilateralAC = integerSideA.equals(integerSideC);
+
+            if (equilateralAB && equilateralAC){
+                System.out.println("This is equilateral triangle");
+            } else {
+                System.out.println("This is might be a triangle");
+
+            }
+
         }
         catch(IOException e)
         {
